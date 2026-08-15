@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Souls Chapel | Non-Denominational Church in Tallassee, AL</title>
+  <meta name="description" content="Welcome to Souls Chapel in Tallassee, Alabama. A warm, non-denominational church community located at 501 Sims Ave. Join us for Sunday Worship at 10:30 AM.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- --- Header / Navigation --- -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <!-- Cross / Flame Custom Icon SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M5 9h14" />
+        </svg>
+        Souls<span>Chapel</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#ministries" class="nav-link">Ministries</a>
+        <a href="#sermons" class="nav-link">Sermons</a>
+        <a href="#giving" class="nav-link">Giving</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#giving" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Give</a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- --- Hero Section --- -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Finding Hope, Together in <span>Christ</span></h1>
+        <p>A warm, welcoming, non-denominational family church in Tallassee, Alabama. Seeking truth, growing in faith, and spreading grace.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-primary">Join Us This Sunday</a>
+          <a href="#sermons" class="btn btn-secondary">Listen to Sermons</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Live Countdown Section --- -->
+    <section class="countdown-section">
+      <div class="countdown-bar glass-premium container" style="padding: 30px 40px; margin-top: 0;">
+        <div class="countdown-info">
+          <h3><span></span>Next Live Service</h3>
+          <p>Join us in person or watch online</p>
+        </div>
+        <div class="countdown-timer" id="countdown">
+          <div class="timer-box">
+            <div class="timer-num" id="days">00</div>
+            <div class="timer-label">Days</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="hours">00</div>
+            <div class="timer-label">Hrs</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="minutes">00</div>
+            <div class="timer-label">Mins</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="seconds">00</div>
+            <div class="timer-label">Secs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- About Section --- -->
+    <section class="about-section container reveal" id="about">
+      <div class="about-grid">
+        <div class="about-graphics">
+          <!-- Multi-photo layout using church style images -->
+          <img src="images/hero_bg.jpg" alt="Souls Chapel Sanctuary" class="about-img">
+          <!-- Custom church SVG graphics placeholder to look beautiful -->
+          <div class="glass-premium img-down" style="padding: 40px; display: flex; flex-direction: column; justify-content: center; height: 280px; text-align: center; border: 1px solid var(--accent);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" style="margin: 0 auto 20px auto;">
+              <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+              <path d="M12 6v12M8 10h8"/>
+            </svg>
+            <h4 style="margin-bottom: 8px;">Non-Denominational</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Independent, Bible-centered, and focused on building a genuine relationship with Jesus Christ.</p>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <span class="badge">Who We Are</span>
+          <h3 style="margin-top: 10px;">A Community Grounded in Love & Grace</h3>
+          <p>The core purpose of Souls Chapel is making Jesus known by sharing the Gospel, transforming lives through God’s Word, and serving the community by being an outreach church. We are focused on reaching the hopeless, feeding the hungry, and providing a place of worship for every person in the heart of Tallassee!</p>
+          
+          <div class="values-accordion">
+            <div class="value-item active">
+              <div class="value-header">
+                Our Purpose
+                <svg class="value-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="value-body">
+                Making Jesus known by sharing the Gospel, transforming lives through God’s Word, and serving the community by being an outreach church.
+              </div>
+            </div>
+            
+            <div class="value-item">
+              <div class="value-header">
+                What We Believe
+                <svg class="value-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="value-body">
+                We believe the Bible is the inspired, authoritative Word of God. We believe salvation is by grace through faith in Jesus Christ, and that the local church is called to display God's love to the world.
+              </div>
+            </div>
+            
+            <div class="value-item">
+              <div class="value-header">
+                Our Leadership
+                <svg class="value-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="value-body">
+                Souls Chapel is led by elders and pastor Josh Dixon. Our leadership structure is independent, focused on shepherd leadership, prayer, teaching, and serving the congregation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Service Times & Location --- -->
+    <section class="services-section reveal" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Join Us</span>
+          <h2>Service Times & Location</h2>
+          <p>We meet weekly in Tallassee, Alabama. Come just as you are.</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="services-info">
+            <div class="service-card glass">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="service-details">
+                <h4>Sunday Morning Worship</h4>
+                <div class="time">Sundays at 10:30 AM</div>
+                <p>A blend of modern praise, traditional worship, and deep biblical message. Children's church is available during the sermon.</p>
+              </div>
+            </div>
+            
+            <div class="service-card glass">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                </svg>
+              </div>
+              <div class="service-details">
+                <h4>Sunday School Classes</h4>
+                <div class="time">Sundays at 9:30 AM</div>
+                <p>Interactive group studies for all ages. Dig deeper into scripture and connect in a smaller setting.</p>
+              </div>
+            </div>
+            
+            <div class="service-card glass">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="service-details">
+                <h4>Midweek Bible Study & Youth</h4>
+                <div class="time">Wednesdays at 6:30 PM</div>
+                <p>Adult prayer & Bible study, alongside high-energy Chapel Youth and Souls Kids programs.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-container">
+            <div class="map-card">
+              <!-- Real Tallassee Google Maps Location Embed -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.168393529323!2d-85.9038287!3d32.5350993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888c3a10e7b233a7%3A0xc0f19c6fb3687352!2s501%20Sims%20Ave%2C%20Tallassee%2C%20AL%2036078!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="glass location-meta">
+              <div class="address-text">
+                <h4>Souls Chapel</h4>
+                <p>501 Sims Ave, Tallassee, AL 36078</p>
+              </div>
+              <a href="https://maps.google.com/?q=501+Sims+Ave,+Tallassee,+AL+36078" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.85rem;">
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Ministries Section --- -->
+    <section class="ministries-section container reveal" id="ministries">
+      <div class="section-header">
+        <span class="badge">Get Involved</span>
+        <h2>Our Ministries</h2>
+        <p>There is a place for everyone in the family at Souls Chapel.</p>
+      </div>
+      
+      <div class="ministries-grid">
+        <!-- Ministry 1 -->
+        <div class="ministry-card glass">
+          <!-- SVG Banner visual instead of placeholder boxes -->
+          <div class="ministry-banner" style="background: linear-gradient(135deg, #10b981, #059669); display: flex; align-items: center; justify-content: center;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+              <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+            </svg>
+            <span class="ministry-badge">Souls Kids</span>
+          </div>
+          <div class="ministry-info">
+            <h3>Kids Ministry</h3>
+            <p>A fun, safe, interactive environment where infants through 5th graders learn God's story.</p>
+            <button class="btn-text open-ministry-modal" data-ministry="kids">Learn More &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Ministry 2 -->
+        <div class="ministry-card glass">
+          <div class="ministry-banner" style="background: linear-gradient(135deg, #d97706, #b45309); display: flex; align-items: center; justify-content: center;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span class="ministry-badge">Chapel Youth</span>
+          </div>
+          <div class="ministry-info">
+            <h3>Youth Ministry</h3>
+            <p>Middle and high schoolers building real friendships and discussing real life answers in faith.</p>
+            <button class="btn-text open-ministry-modal" data-ministry="youth">Learn More &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Ministry 3 -->
+        <div class="ministry-card glass">
+          <div class="ministry-banner" style="background: linear-gradient(135deg, #3b82f6, #2563eb); display: flex; align-items: center; justify-content: center;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span class="ministry-badge">Bible Study Groups</span>
+          </div>
+          <div class="ministry-info">
+            <h3>Adult Groups</h3>
+            <p>Connect groups designed to share life, study scripture, and support one another weekly.</p>
+            <button class="btn-text open-ministry-modal" data-ministry="adults">Learn More &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Ministry 4 -->
+        <div class="ministry-card glass">
+          <div class="ministry-banner" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); display: flex; align-items: center; justify-content: center;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
+              <path d="M12 8v8M8 12h8"/>
+            </svg>
+            <span class="ministry-badge">Outreach & Missions</span>
+          </div>
+          <div class="ministry-info">
+            <h3>Outreach Teams</h3>
+            <p>Sharing Christ's love practically by feeding families, volunteering, and global support.</p>
+            <button class="btn-text open-ministry-modal" data-ministry="outreach">Learn More &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ministry Detail Modal -->
+    <div class="modal-overlay" id="ministryModalOverlay">
+      <div class="modal-content glass-premium">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+        <div class="modal-hero" id="modalHero">
+          <div class="modal-title">
+            <h2 id="modalName">Ministry Title</h2>
+            <span class="badge" id="modalSchedule">Weekly Schedule</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p id="modalDescription" style="font-size: 1.1rem; color: var(--text-secondary);">Detail description goes here.</p>
+          <div class="modal-details">
+            <div class="modal-detail-item">
+              <strong>Meeting Location</strong>
+              <span id="modalLoc">Main Sanctuary</span>
+            </div>
+            <div class="modal-detail-item">
+              <strong>Contact Leader</strong>
+              <span id="modalLeader">Josh Dixon</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" style="align-self: flex-start; margin-top: 10px;" onclick="scrollToSection('#contact'); closeModal();">Inquire / Join Group</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Sermons Section --- -->
+    <section class="container reveal" id="sermons">
+      <div class="section-header">
+        <span class="badge">Media Archive</span>
+        <h2>Recent Sermons</h2>
+        <p>Listen or watch worship messages online to feed your soul throughout the week.</p>
+      </div>
+      
+      <div class="sermons-grid">
+        <!-- Interactive Sermon Player Mockup -->
+        <div class="player-card glass-premium" id="sermonPlayerCard">
+          <div class="player-glow"></div>
+          <div class="player-header">
+            <div class="player-meta">
+              <span class="badge" style="background-color: var(--border-color); color: var(--text-primary);" id="playerDate">August 9, 2026</span>
+              <span class="badge" id="playerSeries">Series: Rooted</span>
+            </div>
+            <h3 class="player-title" id="playerTitle">Waking up in the Wilderness</h3>
+            <p class="player-speaker" id="playerSpeaker">Josh Dixon | Head Pastor</p>
+          </div>
+          
+          <!-- Waveform visualizer -->
+          <div class="waveform-container" id="waveform">
+            <!-- Dynamically generated bars via JS -->
+          </div>
+          
+          <div class="player-controls">
+            <div class="progress-area">
+              <span id="currentTime">0:00</span>
+              <div class="progress-bar-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-bar-handle" id="progressHandle"></div>
+              </div>
+              <span id="duration">32:45</span>
+            </div>
+            
+            <div class="controls-btns">
+              <button class="control-btn" id="prevBtn" aria-label="Previous sermon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
+                </svg>
+              </button>
+              
+              <button class="control-btn control-btn-play" id="playBtn" aria-label="Play/Pause sermon">
+                <!-- Play Icon -->
+                <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <!-- Pause Icon -->
+                <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+              
+              <button class="control-btn" id="nextBtn" aria-label="Next sermon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Previous Sermons Playlist -->
+        <div class="sermon-list">
+          <div class="sermon-item active glass" data-index="0">
+            <div class="sermon-meta-info">
+              <h4>Waking up in the Wilderness</h4>
+              <p>August 9, 2026 | Series: Rooted</p>
+            </div>
+            <div class="sermon-play-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="sermon-item glass" data-index="1">
+            <div class="sermon-meta-info">
+              <h4>Developing a Humble Heart</h4>
+              <p>August 2, 2026 | Series: Rooted</p>
+            </div>
+            <div class="sermon-play-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+
+          <div class="sermon-item glass" data-index="2">
+            <div class="sermon-meta-info">
+              <h4>The Strength of Community</h4>
+              <p>July 26, 2026 | Series: Stronger Together</p>
+            </div>
+            <div class="sermon-play-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+
+          <div class="sermon-item glass" data-index="3">
+            <div class="sermon-meta-info">
+              <h4>Learning to Rest in Truth</h4>
+              <p>July 19, 2026 | Series: Faith Walk</p>
+            </div>
+            <div class="sermon-play-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Giving Section --- -->
+    <section class="giving-section reveal" id="giving">
+      <div class="container">
+        <div class="giving-grid">
+          <div class="giving-content">
+            <span class="badge">Generosity</span>
+            <h3 style="margin-top: 10px;">Supporting Souls Chapel</h3>
+            <p>Giving is an act of worship and thankfulness. We trust God's provision and seek to manage resources with wisdom and integrity to serve the Tallassee community. All gifts directly fund local outreach, children's programs, and community ministries.</p>
+            
+            <button class="btn btn-primary" id="openGiveModalBtn">Give Safely Online</button>
+          </div>
+          
+          <div class="giving-cards">
+            <div class="giving-card glass">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <h4>Mail A Check</h4>
+              <p>Make check payable to Souls Chapel. Send to:</p>
+              <div class="giving-copy-box">
+                <span id="mailAddress">501 Sims Ave, Tallassee AL 36078</span>
+                <button onclick="copyToClipboard('mailAddress')">Copy</button>
+              </div>
+            </div>
+            
+            <div class="giving-card glass">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+              </div>
+              <h4>Give via SMS Text</h4>
+              <p>Text any amount to give instantly through secure mobile payment.</p>
+              <div class="giving-copy-box">
+                <span id="textCode">TEXT GIVE TO (334) 555-0199</span>
+                <button onclick="copyToClipboard('textCode')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secure Donation Modal -->
+    <div class="modal-overlay" id="giveModalOverlay">
+      <div class="modal-content glass-premium" style="max-width: 500px;">
+        <button class="modal-close" id="giveModalClose" aria-label="Close modal">&times;</button>
+        <div class="giving-modal-body">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" style="margin-bottom: 8px;">
+              <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+            <h2>Secure Donation</h2>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Thank you for partnering with Souls Chapel.</p>
+          </div>
+          
+          <form class="giving-form" id="donationForm" onsubmit="handleDonation(event)">
+            <div class="form-group">
+              <label>Select Amount</label>
+              <div class="amount-buttons">
+                <button type="button" class="amount-btn active" data-val="25">$25</button>
+                <button type="button" class="amount-btn" data-val="50">$50</button>
+                <button type="button" class="amount-btn" data-val="100">$100</button>
+                <button type="button" class="amount-btn" data-val="custom">Custom</button>
+              </div>
+              <input type="number" id="customAmount" placeholder="Enter custom amount" style="margin-top: 10px; display: none;" min="5">
+            </div>
+            
+            <div class="form-group">
+              <label for="fundType">Designated Fund</label>
+              <select id="fundType">
+                <option value="General">General Church Operating Fund</option>
+                <option value="Outreach">Community Outreach & Care</option>
+                <option value="Missions">Global Missions</option>
+                <option value="Youth">Youth & Children Ministries</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="donorName">Name on Card</label>
+              <input type="text" id="donorName" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="donorCard">Card Number</label>
+              <input type="text" id="donorCard" required placeholder="4111 2222 3333 4444" pattern="\d{16}|\d{4}\s\d{4}\s\d{4}\s\d{4}" maxlength="19">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="donorExpiry">Expiry Date</label>
+                <input type="text" id="donorExpiry" required placeholder="MM/YY" maxlength="5">
+              </div>
+              <div class="form-group">
+                <label for="donorCvv">CVV</label>
+                <input type="password" id="donorCvv" required placeholder="123" maxlength="4">
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Submit Secure Gift</button>
+          </form>
+          
+          <div id="donationSuccess" style="display: none; text-align: center; padding: 20px 0;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="margin-bottom: 16px;">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <h3>Transaction Approved</h3>
+            <p style="color: var(--text-secondary); margin-top: 8px;">A receipt has been sent to your email. Thank you for your support!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- Contact & Prayer Requests Section --- -->
+    <section class="container reveal" id="contact">
+      <div class="section-header">
+        <span class="badge">Get in Touch</span>
+        <h2>Contact & Prayer Requests</h2>
+        <p>Have a question or need prayer? Reach out to us. We would love to walk alongside you.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-meta-text">
+              <h4>Church Location</h4>
+              <p>501 Sims Ave<br>Tallassee, AL 36078</p>
+            </div>
+          </div>
+          
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-meta-text">
+              <h4>Email Us</h4>
+              <p>office@soulschapel.org<br>prayer@soulschapel.org</p>
+            </div>
+          </div>
+
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-meta-text">
+              <h4>Phone Support</h4>
+              <p>(334) 555-0100</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-card glass">
+          <div id="contactResponse" class="form-response-message success">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Your message has been sent successfully. We will be in touch soon!</span>
+          </div>
+
+          <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" required placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" required placeholder="jane@example.com">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject">
+                <option value="General">General Inquiry</option>
+                <option value="Prayer">Prayer Request</option>
+                <option value="Pastor">Question for Pastor Arthur</option>
+                <option value="Serve">Interested in Serving</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactMessage">How can we help or pray for you?</label>
+              <textarea id="contactMessage" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="footer-grid container" style="padding: 0 0 40px 0;">
+      <div class="footer-brand">
+        <h3>Souls<span>Chapel</span></h3>
+        <p>A bible-focused, independent non-denominational fellowship sharing God's grace in Tallassee, Alabama.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Service Schedule</a></li>
+          <li><a href="#ministries">Ministries</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#sermons">Sermon Archive</a></li>
+          <li><a href="#giving">Giving Options</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+          <li><a href="https://maps.google.com/?q=501+Sims+Ave,+Tallassee,+AL+36078" target="_blank" rel="noopener noreferrer">Directions Map</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links" style="max-width: 250px;">
+        <h4>Location</h4>
+        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 8px;">
+          501 Sims Ave<br>Tallassee, AL 36078
+        </p>
+        <p style="color: #cbd5e1; font-weight: 500;">
+          Sundays @ 10:30 AM
+        </p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom container" style="padding: 20px 0 0 0;">
+      <p>&copy; 2026 Souls Chapel. All rights reserved.</p>
+      <p>Built as a premium web demo for Tallassee, AL.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
