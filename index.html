@@ -147,7 +147,6 @@
               <div class="service-details">
                 <h4>Sunday School</h4>
                 <div class="time">Sundays at 10:00 AM</div>
-                <p>Interactive group Bible studies for all ages. Dig deeper into scripture and build fellowship.</p>
               </div>
             </div>
 
@@ -161,7 +160,6 @@
               <div class="service-details">
                 <h4>Sunday Morning Worship</h4>
                 <div class="time">Sundays at 11:00 AM</div>
-                <p>Worship praise, prayer, and deep Biblical messages. Children's church is available during the sermon.</p>
               </div>
             </div>
             
@@ -174,7 +172,6 @@
               <div class="service-details">
                 <h4>Sunday Evening Worship</h4>
                 <div class="time">Sundays at 5:30 PM</div>
-                <p>A closer community worship setting to end the Lord's Day focused on God's Word and prayer.</p>
               </div>
             </div>
 
@@ -190,7 +187,6 @@
               <div class="service-details">
                 <h4>Wednesday Midweek Service</h4>
                 <div class="time">Wednesdays at 7:00 PM</div>
-                <p>Adult prayer & Bible study fellowship to recharge your faith in the middle of the week.</p>
               </div>
             </div>
           </div>
@@ -251,7 +247,11 @@
             </div>
             <div class="contact-meta-text">
               <h4>Email Us</h4>
-              <p>office@soulschapel.org<br>prayer@soulschapel.org</p>
+              <p style="font-size: 0.95rem; line-height: 1.8;">
+                <strong>Pastor Joshua:</strong> <a href="mailto:Josh.Dixon@soulschapel.org" style="color: var(--accent);">Josh.Dixon@soulschapel.org</a><br>
+                <strong>Welcome Team:</strong> <a href="mailto:Welcometeam@soulschapel.org" style="color: var(--accent);">Welcometeam@soulschapel.org</a><br>
+                <strong>Prayer Team:</strong> <a href="mailto:PrayerTeam@soulschapel.org" style="color: var(--accent);">PrayerTeam@soulschapel.org</a>
+              </p>
             </div>
           </div>
 
@@ -276,32 +276,40 @@
             <span>Your message has been sent successfully. We will be in touch soon!</span>
           </div>
 
-          <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contactName">Your Name</label>
-                <input type="text" id="contactName" required placeholder="Jane Doe">
-              </div>
-              <div class="form-group">
-                <label for="contactEmail">Email Address</label>
-                <input type="email" id="contactEmail" required placeholder="jane@example.com">
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="contactSubject">Subject</label>
-              <select id="contactSubject">
-                <option value="General">General Inquiry</option>
-                <option value="Prayer">Prayer Request</option>
-                <option value="Pastor">Question for Pastor Joshua</option>
-                <option value="Serve">Interested in Serving</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="contactMessage">How can we help or pray for you?</label>
-              <textarea id="contactMessage" rows="5" required placeholder="Write your message here..."></textarea>
-            </div>
+           <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleContact(event)">
+             <!-- Web3Forms Access Key (Paste your key in value) -->
+             <input type="hidden" name="access_key" value="35dca924-9b62-41ac-bdc9-82177b75006b">
+             
+             <!-- Optional: Custom Email Subject -->
+             <input type="hidden" name="subject" value="New Contact Form Submission - Souls Chapel">
+             <!-- Optional: Anti-Spam HoneyPot -->
+             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+             <div class="form-row">
+               <div class="form-group">
+                 <label for="contactName">Your Name</label>
+                 <input type="text" id="contactName" name="name" required placeholder="Jane Doe">
+               </div>
+               <div class="form-group">
+                 <label for="contactEmail">Email Address</label>
+                 <input type="email" id="contactEmail" name="email" required placeholder="jane@example.com">
+               </div>
+             </div>
+             
+             <div class="form-group">
+               <label for="contactSubject">Subject Category</label>
+               <select id="contactSubject" name="category">
+                 <option value="General">General Inquiry</option>
+                 <option value="Prayer">Prayer Request</option>
+                 <option value="Pastor">Question for Pastor Joshua</option>
+                 <option value="Serve">Interested in Serving</option>
+               </select>
+             </div>
+             
+             <div class="form-group">
+               <label for="contactMessage">How can we help or pray for you?</label>
+               <textarea id="contactMessage" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+             </div>
             
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>

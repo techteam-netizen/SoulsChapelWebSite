@@ -1348,6 +1348,19 @@ header.scrolled {
   color: #34d399;
 }
 
+.form-response-message.error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #b91c1c;
+}
+
+[data-theme="dark"] .form-response-message.error {
+  color: #f87171;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }

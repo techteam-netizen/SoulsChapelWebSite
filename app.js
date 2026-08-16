@@ -121,22 +121,52 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     
     const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerText;
     submitBtn.innerText = "Sending Message...";
     submitBtn.disabled = true;
 
-    // Simulate sending message API
-    setTimeout(() => {
-      contactResponse.classList.add('success');
+    const formData = new FormData(contactForm);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async (response) => {
+      let jsonRes = await response.json();
+      if (response.status == 200) {
+        contactResponse.classList.remove('error');
+        contactResponse.classList.add('success');
+        contactResponse.querySelector('span').innerText = "Your message has been sent successfully. We will be in touch soon!";
+        contactResponse.style.display = 'flex';
+        contactForm.reset();
+      } else {
+        console.error(response);
+        contactResponse.classList.remove('success');
+        contactResponse.classList.add('error');
+        contactResponse.querySelector('span').innerText = jsonRes.message || "Something went wrong. Please try again.";
+        contactResponse.style.display = 'flex';
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      contactResponse.classList.remove('success');
+      contactResponse.classList.add('error');
+      contactResponse.querySelector('span').innerText = "Network error. Please check your internet connection.";
       contactResponse.style.display = 'flex';
-      contactForm.reset();
-      
-      submitBtn.innerText = "Send Message";
+    })
+    .then(() => {
+      submitBtn.innerText = originalBtnText;
       submitBtn.disabled = false;
-      
-      // Hide response after 6 seconds
+      // Hide response after 8 seconds
       setTimeout(() => {
         contactResponse.style.display = 'none';
-      }, 6000);
-    }, 1500);
+      }, 8000);
+    });
   };
 });
